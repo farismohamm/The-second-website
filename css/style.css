@@ -1,0 +1,579 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+   height:2999px;
+}
+.main_saction{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+.header-logo nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     box-shadow: 0  0 8px  rgba(0, 0, 0, 0.6); 
+    background: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0; 
+    padding: 40px;
+    z-index: 1000;
+}
+.header-logo nav .logo{
+    font-size: 35px;
+    color: #c72092;
+    margin: 5px 0;
+    position: relative;
+    left: -4%;
+}
+.header-logo nav .logo span{
+    color: #6c14d0;;
+    text-decoration: underline;
+}
+.header-logo nav ul{
+    list-style:none;
+}
+.header-logo nav ul li{
+    position: relative;
+    display: inline-block;
+      margin: 5px 15px;
+     
+}
+ .header-logo nav ul li a::before,
+ .header-logo nav ul li a::after{ 
+    content:"";
+    position: absolute;
+ 
+    border-width: 2px 0;
+    left: 0;
+
+top: 0;
+transform-origin: left;
+transform: scale3d(1,0,1);
+ visibility: hidden;
+
+ }
+
+.header-logo nav ul li a:hover::before{
+    border-width: 2px 2px;
+border:2px   solid #7700ff;
+width: 100%;
+height: 95%;
+transition-duration: .60s;
+    visibility: visible;
+   transform: scale3d(1,0,1);
+    transform: scale3d(1,1,1);
+}
+
+
+.header-logo nav ul li a{
+    text-decoration: none;
+    color: black;
+    transform: 0.2s;
+position: relative;
+
+ padding:7px 10px; 
+} 
+
+.header-logo nav  .icons i{
+    margin: 0 9px;
+    cursor: pointer;
+  font-size: 29px;
+    transform: 0.3s;
+}
+.header-logo nav  .icons  span{
+    margin-left: 5px;
+    font-size: 20px;
+}
+#i{
+  margin-left: 5px;
+  position: relative;
+}
+.header-logo nav  .icons   span:hover{
+    background: linear-gradient(to  right, #c72092, #6c14d0);
+ -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+#i::after{
+content: '0';
+color: #ffffff;
+border-radius: 50%;
+padding: 4px;
+font-size: 13px;
+bottom: -4px;
+ background: linear-gradient(to  right, #c72092, #6c14d0);
+
+position: absolute;
+}
+
+.header-logo nav  .icons i:hover{
+    color: #c72092;
+}
+.loi{
+    position: relative;
+}
+.logo-header-hovar-nlke{
+    border: 0;
+    position: absolute;
+    width: 650px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+    box-shadow: 0 0 8px #7700ff;
+    grid-gap:10px;
+padding: 20px; 
+    transform: scale(0);
+    opacity: 0;
+    background: linear-gradient(to  right, #ff85d8, #9f757582);
+    transition: 3s;
+    margin-right: 50%;
+    visibility: hidden;
+    margin-top: 10px;
+}
+.loi:hover .logo-header-hovar-nlke{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    z-index: 4;
+
+}
+.logo-header-lista-nike li {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.logo-header-lista-nike li a{
+    line-height: 1.9;
+    color: #ffffff;
+
+}
+.bordar{
+  border-bottom: 2px   dotted     gainsboro;
+  background: linear-gradient(to  right, #8000ff, #ff00d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.main_saction  .main  .main-content{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_saction  .main  .main-content .main-text h1{
+font-size: 90px;
+line-height: 70px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(to  right, #c72092, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+top: 45px;
+left: 5%;
+}
+.main_saction  .main  .main-content .main-text h1 span{
+    font-size: 70px;
+
+background: linear-gradient(to  right, #c72092, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.main_saction  .main  .main-content .main-text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+}
+.main_saction  .main  .main-content  .main-image  img{
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+.main_saction  .main  .social-icon{
+ position: absolute;
+ top: 54%;
+left: 98%;
+transform: translate(-50%, -50%);
+font-size: 19px;
+}
+.main_saction  .main  .social-icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main_saction  .main  .social-icon i:hover{
+    color: #c72092;
+}
+.main_saction  .main  .button{
+    position: absolute;
+    left: 6%;
+    padding:10px 20px ;
+    border-radius: 10px;
+    
+background: linear-gradient(to  right, #c72092, #6c14d0);
+}
+.main_saction  .main  .button a{
+color:white;
+text-decoration: none;
+}
+.main_saction  .main  .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+.main_saction  .main  .button:hover i{
+    transform: translateX(6px);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.category-temas{
+display: grid;
+grid-template-columns: auto  auto  auto  auto;
+display: flex;
+justify-content: space-evenly;
+grid-gap:20px;
+
+}
+.special-Title{
+margin: auto;
+position: relative;
+margin-top: 20%;
+
+}
+.special-Title  .h2{
+    text-align: center;
+    font-size: 48px;
+    background: linear-gradient(to  right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.special-Title  .category-Title{
+width: 150px;
+height: 3px;
+text-align: center;
+display: block;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+margin: auto;
+transition: 2s;
+}
+.special-Title:hover  .category-Title{
+    width: 250px;
+}
+.category-tema{
+text-align: center;
+position: relative;
+width: 290px; 
+box-shadow: 0 0 8px #6c14d0;
+margin: auto;
+margin-top: 5%;
+padding: 20px 20px;
+}
+.category-tema h2{
+font-size: 35px;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.category-tema  span{
+    width: 50px;
+    color: #91919191;
+    line-height: 15px;
+
+
+}
+.category-tema i{
+    font-size: 45px;
+position: absolute;
+top: 80%;
+color: aliceblue;
+left: 87%;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+visibility: hidden;
+}
+.category-tema:hover  i{
+    visibility: visible;
+}
+.NIKE{
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-gap:10px;
+}
+.NIKE-contant{
+    position: relative;
+    width: 450px;
+    height: 250px;   
+    box-shadow: 0 0 8px #6c14d0;
+ margin: 20% 5%;
+ line-height: 30px;
+ padding-left: 10px;
+}
+.NIKE-contant  i{
+    font-size: 85px;
+    left: 3%;
+margin-left: 5%;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.NIKE-contant h2{
+   text-transform: uppercase;
+top: 9%;
+font-size: 33px;
+margin-left: 25%;
+position: absolute;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.NIKE-contant span{
+margin-top: 4px;
+margin-left: 8%;
+font-size: 20px;
+color: #91919191
+}
+.NIKE-contant  p{
+    font-size: 20px;
+}
+.companies{
+    left: 95%;
+    margin-left: 50%;
+
+}
+.companies  span{
+width: 50px;
+height: 3px;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+display: inline-block;
+
+}
+.love-comant{
+    background-image: url(../image/shoes3.png);
+width: 290px;
+height: 250px;
+position: relative;
+    background-size: cover;
+margin-top: 29%;
+margin-left: 15%;
+box-shadow: 0 0 8px #6c14d0;
+
+}
+.love-comant-tmes{
+    position: absolute;
+    padding: 10px 10px;
+    
+}
+.op{
+    background-image: url(../image/logshoes.png);
+}
+.love-comant-tmes h2{
+    font-size: 27px;
+    background: linear-gradient(to  right, #d31797, #00aeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.love-comant-tmes h3{
+    font-size: 23px;
+    color: #000000
+}
+.love-comant:hover h2{
+    transform: scale(1.4);
+}
+.love-comant:hover h3{
+    
+    transform: scale(1.3);
+}
+
+.love-comant:hover{
+    transform: scale(1.1);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contants-Awards-tam{
+ display: flex;
+justify-content: space-between;
+
+text-align: center;
+}
+.contns-Awards-tam-icons-1{
+
+display: flex;
+flex-direction: column;
+
+
+}
+.bom{
+    border-right: 1px solid  #6c14d0; 
+    
+}
+.contns-Awards-tam-icons-1  .icons{
+    height: 30px;
+    position: relative;
+
+}
+
+
+.contns-Awards-tam-icons-1:hover  .icons-ico i{
+    visibility: hidden;
+ top: 5px;
+
+}
+.contns-Awards-tam-titile  h2{
+    background: linear-gradient(to  right, #bc2f8fd9, #7700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-size: 27px;
+}
+.contns-Awards-tam-titile   span{
+color: #8d8d8da7;
+width: 4px;
+
+}
+.contns-Awards-tam-icons-1  .icons i{
+    background: linear-gradient(to  right, #d31797, #00aeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-size: 29px;
+
+}
+.contns-Awards-tam-icons-1.button:hover  .icons i{
+visibility: hidden;
+}
+.contns-Awards-tam-icons-1  .icons a i{
+   visibility: hidden;
+}
+.contns-Awards-tam-icons-1:hover  .icons a  i{
+top: -2px;
+transform: translate(-50%);
+visibility: visible;
+position: absolute;
+background: linear-gradient(to  right, #7e2d64, #00aeff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+hr{
+    width: 100%;
+    display: block;
+    height: 3px;
+margin-top: 3%;
+border: 0;
+
+
+background: linear-gradient(to  right, #d31797, #00aeff);
+
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.shoes-Title{
+text-align: center;
+margin-top: 11%;
+background: linear-gradient(to  right, #d31797, #6c14d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 30PX;
+}
+
+.shoes-Title  span{
+    width: 250px;
+    height: 3px;
+    text-align: center;
+    display: block;
+    background: linear-gradient(to right, #d31797, #6c14d0);
+    margin: auto;
+    transition: 2s;
+}
+.shoes-Title:hover  span{
+    width: 350px;
+}
+.shoers-lista{
+display: flex;
+
+justify-content: center;
+margin-top: 4%;
+}
+.shoers-lista   li{
+  margin:0  3%;
+    list-style: none;
+}
+.tams-Nike{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap:50px;
+margin: 0 6%;
+}
+.tams-Nike-sports-img{
+margin-top: 15%;
+    position: relative;
+    box-shadow: 0 0 8px #570eab;
+}
+
+
+
+.tams-Nike-sports-img-ovile{
+
+    position: absolute;
+    top: 0;
+left: 0;
+    transform:scalex(0);
+    opacity: 0.9;
+    transition: 2s;
+}
+.tams-Nike-sports-img-ovile  ul{
+    position: absolute;
+    top: 50%;
+ left: 50%;
+   transform: translate(-50%,-50%); 
+   text-align: center;
+}
+
+
+.tams-Nike-sports-img-ovile  ul li{
+    
+width: 40px;
+height: 40px;
+
+list-style: none;
+display: inline-block;
+background-color: #6c14d0;
+}
+
+
+.tams-Nike-sports-img-ovile   ul li i{
+    color: #f7fdff;
+    line-height: 40px;
+    font-size: 24px;
+background: linear-gradient(to  right, #ff00ae, #00e1ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.tams-Nike-sports-img:hover  .tams-Nike-sports-img-ovile  {
+    transform: scalex(1);
+}
+.shoes-ovlie-icons-title  span{
+   display: block; 
+   margin: 5px 0;
+   color: #6b6363aa;
+}
+.shoes-ovlie-icons-title  i{
+    background: linear-gradient(to  right, #ff00c393, #00e1ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shoes-ovlie-icons-title h2{
+    background: linear-gradient(to  right, #ff00c393, #00e1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
